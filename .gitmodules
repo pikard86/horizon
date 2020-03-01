@@ -1,3 +1,6 @@
 [submodule "mail-service"]
 	path = mail-service
 	url = https://github.com/pikard86/mail-service.git
+[submodule "mail-ui"]
+	path = mail-ui
+	url = https://github.com/pikard86/mail-ui.git
