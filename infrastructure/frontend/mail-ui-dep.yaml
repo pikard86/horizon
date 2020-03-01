@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mail-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mail-ui
+  template:
+    metadata:
+      labels:
+        app: mail-ui
+    spec:
+      containers:
+      - name: mail-ui
+        image: pikard86/mail-ui:0.0.1
+        ports:
+        - containerPort: 80
+          protocol: TCP

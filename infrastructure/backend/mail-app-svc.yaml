@@ -1,0 +1,14 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: mail-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: mail-app
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080

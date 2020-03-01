@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mail-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mail-app
+  template:
+    metadata:
+      labels:
+        app: mail-app
+    spec:
+      containers:
+      - name: mail-service
+        image: pikard86/mail-service:0.0.4
+        ports:
+        - containerPort: 8080
+          protocol: TCP
