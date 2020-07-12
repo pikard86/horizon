@@ -36,11 +36,11 @@ cd infrastructure/
 Notice: Cluster is provisioning, waiting for cluster to be running
 ..............................................................
 Notice: Cluster created, fetching credentials
-Warning: Using the doctl Snap? Please create the directory: "/home/phrometheus/.kube" before trying again
-Notice: Adding cluster credentials to kubeconfig file found in "/home/phrometheus/.kube/config"
+Warning: Using the doctl Snap? Please create the directory: "/home/user/.kube" before trying again
+Notice: Adding cluster credentials to kubeconfig file found in "/home/user/.kube/config"
 Notice: Setting current-context to do-nyc1-horizon
 Warning: Using the doctl Snap? Grant access to the doctl:kube-config plug to use this command with: sudo snap connect doctl:kube-config
-Warning: Couldn't write cluster credentials: mkdir /home/phrometheus/.kube: permission denied
+Warning: Couldn't write cluster credentials: mkdir /home/user/.kube: permission denied
 ID                                      Name       Region    Version        Auto Upgrade    Status     Node Pools
 bee7ef00-ded6-4f42-8a52-626928c669a0    horizon    nyc1      1.18.3-do.0    false           running    horizon-default-pool
 ```
@@ -90,7 +90,7 @@ cd infrastructure/
 ```sh
 Warning: Are you sure you want to delete this Kubernetes cluster? (y/N) ? y
 Notice: Cluster deleted, removing credentials
-Notice: Removing cluster credentials from kubeconfig file found in ".kube/config"
+Notice: Removing cluster credentials from kubeconfig file found in "/home/user/.kube/config"
 Notice: The removed cluster was set as the current context in kubectl. Run `kubectl config get-contexts` to see a list of other contexts you can use, and `kubectl config set-context` to specify a new one."
 ```
 Then remove the load balancers from the networking [control panel](https://cloud.digitalocean.com/networking/load_balancers)
