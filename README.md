@@ -86,6 +86,20 @@ From the [cluster section](https://cloud.digitalocean.com/kubernetes/clusters) o
 
 ![](docs/k8s_dashboard.png)
 
+## Scale deployments 
+```sh
+kubectl scale -n default deployment mail-ui --replicas=5
+```
+
+```sh
+kubectl get deployments
+```
+```sh
+  NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+  mail-app   1/1     1            1           32m
+  mail-ui    5/5     5            5           32m
+```
+
 ## Cleanup
 ```sh
 cd infrastructure/ 
