@@ -1,3 +1,5 @@
+# Project Horizon
+
 ## Quickstart
 
 - Installing tools :
@@ -80,6 +82,9 @@ cassandra-0                 1/1     Running   0          20m
 mail-app-7cdc8bc88c-clw48   1/1     Running   1          19m
 mail-ui-768cf9fc5f-2zltf    1/1     Running   0          21m
 ```
+From the [cluster section](https://cloud.digitalocean.com/kubernetes/clusters) on Digital ocean you should be able to access the dashboard
+
+![](docs/k8s_dashboard.png)
 
 ## Cleanup
 ```sh
