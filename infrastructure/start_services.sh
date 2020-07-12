@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 
 ## Starting Data layer
-.persistence/install.sh 
 
+cd persistence
+./install.sh 
+cd ..
 ## Starting Backend API services
-.frontend/install.sh 
-
+cd backend
+./install.sh 
+cd ..
 
 ## Starting UI Services
-.frontend/install.sh 
-
+cd frontend
+./install.sh 
+cd ..
