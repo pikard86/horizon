@@ -1,11 +1,11 @@
 [submodule "mail-service"]
 	path = mail-service
-	url = https://github.com/pikard86/mail-service.git
+	url = git@github.com:pikard86/mail-service.git
 	branch = master
 	update = rebase
 [submodule "mail-ui"]
 	path = mail-ui
-	url = https://github.com/pikard86/mail-ui.git
+	url = git@github.com:pikard86/mail-ui.git
 	branch = master
 	update = rebase
 [submodule "datamove"]
